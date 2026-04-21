@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #23422a;
+  --color-secondary: #75584d;
+  --color-tertiary: #711e0e;
+  --color-surface: #f4ffc8;
+  --color-surface-muted: #e9f5b0;
+  --color-archive: #dde8af;
+
+  --font-serif: "Newsreader", serif;
+  --font-sans: "Plus Jakarta Sans", sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-surface text-primary font-sans antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  .serif {
+    @apply font-serif;
+  }
+}
+
+@layer utilities {
+  .ghost-border {
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(35, 66, 42, 0.2);
+  }
+
+  .rounded-organic-1 {
+    border-radius: 40px 10px 40px 10px;
+  }
+
+  .rounded-organic-2 {
+    border-radius: 10px 40px 10px 40px;
+  }
+
+  .rounded-organic-3 {
+    border-radius: 40px 40px 10px 40px;
+  }
+
+  .rounded-organic-hero {
+    border-radius: 180px 40px 180px 40px;
+  }
+
+  .rounded-organic-card {
+    border-radius: 40px 10px;
+  }
+}
